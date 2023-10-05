@@ -6,18 +6,17 @@
     color: white;
 }
 
-.banner
-{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgb(9, 10, 14), rgb(43, 61, 70));
-    background-size: cover;
-    background-position: center;
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars */
 }
+
+
 
 .navbar
 {
-
+    position: fixed;
     font-size: 2vh;
     font-weight: 700;
     width: 85%;
@@ -66,12 +65,15 @@
 }
 
 .recTable {
+    position: relative;
+    top: 25vh;
     overflow-y: hidden; /* Hide vertical scrollbar */
     overflow-x: hidden; /* Hide horizontal scrollbar */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh; /* Adjust to your desired height */
+    max-width: 100vw;
 }
 
 /* Apply some basic design styles */
@@ -82,4 +84,37 @@ iframe {
     height: 100%; /* Allow the iframe to take up the full height within the .recTable container */
     transform-origin: center center; /* Set the transform origin to the top-left corner */
     transform: scale(0.8); /* Scale the iframe to 80% of its original size */
+}
+
+.section {
+    height: 100vh; /* 100% viewport height for each section */
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section0
+{
+    background-image: linear-gradient(rgb(9, 10, 14), rgb(43, 61, 70));
+    background-size: cover;
+    background-position: center;
+}
+
+.section1 {
+    background-image: linear-gradient(rgb(43, 61, 70),rgb(9, 10, 14));
+    background-size: cover;
+    background-position: center;
+}
+
+.section2 {
+    background-image: linear-gradient(rgb(9, 10, 14), rgb(43, 61, 70));
+    background-size: cover;
+    background-position: center;
+}
+
+.section3 {
+    background-image: linear-gradient(rgb(43, 61, 70),rgb(9, 10, 14));
+    background-size: cover;
+    background-position: center;
 }
