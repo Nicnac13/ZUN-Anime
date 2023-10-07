@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
     let sections = document.querySelectorAll(".section");
     let currentSection = -1;
@@ -17,6 +15,5 @@ document.addEventListener("DOMContentLoaded", function () {
             currentSection--;
             scrollToSection(currentSection);
         }
-        event.preventDefault();
     });
 });
