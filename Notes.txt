@@ -7,6 +7,7 @@
 - Sections: A bit tricky, requires special scroller, since body has to have top padding of 100px.
 - Simple and running first, then make it complicated
 - Margin from the headers spills out -> padding on the section
+- Comments are nice, but "Padding as a percentage of viewport height" is mostly visual clutter ngl
 
 ### TODOs
 

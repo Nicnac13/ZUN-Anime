@@ -1,0 +1,68 @@
+/* gallery.css */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Center the thumbnails horizontally */
+    align-items: center; /* Align items at the top of the flex container */
+}
+
+.thumbnail-container {
+    position: relative;
+    max-width: calc(50% - 30px); /* Set maximum width for two side-by-side containers */
+    max-height: calc(100% - 100px); /* Take most of the container, minus navbar */
+    box-sizing: border-box;
+    overflow: hidden; /* Hide overflowing content within the container */
+}
+
+.thumbnail {
+    cursor: pointer;
+    transition: transform 0.2s;
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    max-height: 100%; /* Ensure images maintain their aspect ratio */
+}
+
+.thumbnail img {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    max-height: 100%; /* Ensure images maintain their aspect ratio */
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Style the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10vh; /* Padding as a percentage of viewport height */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80vw; /* Set maximum width as a percentage of viewport width */
+    max-height: 80vh; /* Set maximum height as a percentage of viewport height */
+}
+
+.close {
+    position: absolute;
+    top: 2vh; /* Position as a percentage of viewport height */
+    right: 3vw; /* Position as a percentage of viewport width */
+    font-size: 3vw; /* Font size as a percentage of viewport width */
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
