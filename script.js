@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentSection = -1;
 
     function scrollToSection(index) {
+        // window.scrollTo(0, sections[index].offsetTop - 100);
         sections[index].scrollIntoView({ behavior: "smooth" });
     }
 
@@ -16,5 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
             currentSection--;
             scrollToSection(currentSection);
         }
+        event.preventDefault();
     });
 });
