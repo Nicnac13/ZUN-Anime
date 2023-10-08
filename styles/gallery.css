@@ -29,6 +29,21 @@
 .thumbnail:hover {
     transform: scale(1.1);
 }
+/* Caption situated at the bottom of the preview */
+.fourkoma-caption {
+    border: 3px solid black;
+    background: white;
+    font-family: Bangers, cursive;
+    font-weight: bold;
+    font-size: 2em;
+    color: black;
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    right: 5%;
+    bottom: 2.5%; /* Does this work or is there a better scaling solution? */
+}
+
 
 /* Style the modal */
 .modal {

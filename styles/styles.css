@@ -10,6 +10,7 @@ body *
 
 body
 {
+    background-color: rgb(9, 10, 14); /* to prevent transparency problems with navbar at top of site */
     margin: 0;
     padding: 100px 0 0 0;
 }
@@ -23,10 +24,11 @@ body
     top: 0;
     left: 0;
     z-index: 10;
-
+    
     font-size: 1.5em;
     font-weight: bold;
-    background-color: rgb(9, 10, 14);
+    /* To make the navbar a bit transparent when scrolling down, will probably change down the line */
+    background-image: radial-gradient(ellipse 200% 100% at center bottom, transparent 0%, rgba(9,10,14,0.1) 10%, rgba(9,10,14,0.5) 30%, rgba(9, 10, 14, 1) 70%);
 }
 
 .navbar-content
@@ -40,13 +42,28 @@ body
 .logo
 {
     height: 100px;
-    display: block;
+    display: flex;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .logo img
 {
     height: 100%;
+}
+
+.logo ul
+{
+    text-decoration: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img:hover
+{
+    scale: 105%;
 }
 
 .navbar ul li 
@@ -68,7 +85,7 @@ body
     content: '';
     height: 5px;
     width: 0%;
-    background: rgb(33, 110, 94);
+    background: rgb(33, 110, 95);
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -97,6 +114,42 @@ body
 .section > h1
 {
     display: inline-block; /* Prevent padding from flowing outside of parent size */
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+
+.section > p
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 2em;
+}
+
+button
+{
+    position: relative;
+    overflow: hidden;
+    width: 25rem;
+    padding: 1.5em 0;
+    text-align: center;
+    margin: 2em 2em;
+    border-radius: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    border: 5px solid rgb(33, 110, 94);
+    background: rgb(53, 163, 141);
+}
+
+button:hover
+{
+    background: rgb(33, 110, 94);
+}
+
+button:active
+{
+    border: 5px solid rgb(15, 49, 42);
+    background: rgb(15, 49, 42);
 }
 
 .section0
@@ -104,7 +157,17 @@ body
     background-image: linear-gradient(rgb(9, 10, 14), rgb(43, 61, 70));
 }
 
-.section1 {
+.section0 img.welcome
+{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.section1 
+{
     background-image: linear-gradient(rgb(43, 61, 70),rgb(9, 10, 14));
 }
 
