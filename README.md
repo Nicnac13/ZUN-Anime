@@ -9,4 +9,4 @@ This repository is used to display various informational stuff for our members a
  Nico Haru
 
 
-You can find the Website repository [here]([https://link-url-here.org](https://github.com/Nicnac13/ZUN-Anime-Website)).
+You can find the Website repository [here](https://github.com/Nicnac13/ZUN-Anime-Website).
