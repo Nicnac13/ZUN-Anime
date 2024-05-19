@@ -1,4 +1,0 @@
-### TODOs
-
-- Navbar handling, so that it doesn't have to be copy pasted?
-- Sections scroller: Add flex container around sections, fix scrolling.
