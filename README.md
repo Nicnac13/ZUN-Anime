@@ -1,3 +1,6 @@
+This is an outdated repository, the new one can be found at the ZUN-Anime organisational github page [here](https://github.com/ZUN-Anime/ZUN-Anime-Website).
+The website can be directly accessed [here](https://zun-anime.ch/)
+
 # ZUN-Anime
 ZUN-Anime Association Github repository
 ## Welcome to the GitHub Page of the ZUN-Anime Association
